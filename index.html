@@ -24,6 +24,43 @@
 			max-width: 600px;
 			height: auto;
 		}
+
+		/* Mobiele weergave */
+		@media screen and (max-width: 1152px) {
+
+			/* Alle blokken gelijke min-hoogte */
+			#wrapper > section > header,
+			#wrapper > section > .content,
+			#wrapper > section.intro > .content.logo-panel {
+				min-height: 55vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				box-sizing: border-box;
+			}
+
+			/* Intro logo-paneel: height:100vh van template overschrijven */
+			#wrapper > section.intro > .content.logo-panel {
+				height: auto !important;
+				align-items: center;
+				padding: 3rem 2rem;
+			}
+
+			.intro .content.logo-panel img {
+				width: 70%;
+				max-width: 360px;
+			}
+
+			/* Groene header-blokken */
+			#wrapper > section > header {
+				padding: 3rem 2rem !important;
+			}
+
+			/* Witte content-blokken */
+			#wrapper > section > .content {
+				padding: 3rem 2rem !important;
+			}
+		}
 	</style>
 	</head>
 	<body class="is-preload">
